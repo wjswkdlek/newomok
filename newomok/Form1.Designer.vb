@@ -29,16 +29,13 @@ Partial Class frmMain
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtID = New System.Windows.Forms.RichTextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.White
-        Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Controls.Add(Me.txtPass)
         Me.Panel1.Controls.Add(Me.Label2)
@@ -119,16 +116,6 @@ Partial Class frmMain
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "ID"
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.newomok.My.Resources.Resource1.omok
-        Me.PictureBox1.Location = New System.Drawing.Point(113, 27)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(250, 250)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 7
-        Me.PictureBox1.TabStop = False
-        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 12.0!)
@@ -145,7 +132,6 @@ Partial Class frmMain
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -157,5 +143,4 @@ Partial Class frmMain
     Friend WithEvents txtID As RichTextBox
     Friend WithEvents Panel2 As Panel
     Friend WithEvents btnLogin As Button
-    Friend WithEvents PictureBox1 As PictureBox
 End Class
