@@ -80,10 +80,10 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmMain.Designer.vb">
-      <DependentUpon>FrmMain.vb</DependentUpon>
+    <Compile Include="frmStart.Designer.vb">
+      <DependentUpon>frmStart.vb</DependentUpon>
     </Compile>
-    <Compile Include="FrmMain.vb">
+    <Compile Include="frmStart.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
