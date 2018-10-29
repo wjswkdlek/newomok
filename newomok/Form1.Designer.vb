@@ -123,10 +123,9 @@ Partial Class frmMain
         Me.BackColor = System.Drawing.Color.Silver
         Me.ClientSize = New System.Drawing.Size(441, 594)
         Me.Controls.Add(Me.Panel1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
-        Me.MaximumSize = New System.Drawing.Size(457, 633)
         Me.MinimizeBox = False
-        Me.MinimumSize = New System.Drawing.Size(457, 633)
         Me.Name = "frmMain"
         Me.ShowIcon = False
         Me.Panel1.ResumeLayout(False)
