@@ -108,7 +108,7 @@ Partial Class frmMain
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.newomok.My.Resources.Resource1.omok
-        Me.PictureBox1.Location = New System.Drawing.Point(66, 12)
+        Me.PictureBox1.Location = New System.Drawing.Point(65, 12)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(250, 250)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
