@@ -22,17 +22,19 @@ Partial Class frmMain
     '코드 편집기에서는 수정하지 마세요.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
         Me.btnLogin = New System.Windows.Forms.Button()
-        Me.txtPass = New System.Windows.Forms.RichTextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.txtID = New System.Windows.Forms.RichTextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtCheck = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.noti1 = New System.Windows.Forms.NotifyIcon(Me.components)
+        Me.lblRegister = New System.Windows.Forms.Label()
+        Me.txtID = New System.Windows.Forms.TextBox()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.txtPass = New System.Windows.Forms.TextBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
+        Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnLogin
@@ -44,22 +46,9 @@ Partial Class frmMain
         Me.btnLogin.Location = New System.Drawing.Point(12, 481)
         Me.btnLogin.Name = "btnLogin"
         Me.btnLogin.Size = New System.Drawing.Size(355, 52)
-        Me.btnLogin.TabIndex = 6
+        Me.btnLogin.TabIndex = 3
         Me.btnLogin.Text = "Login"
         Me.btnLogin.UseVisualStyleBackColor = False
-        '
-        'txtPass
-        '
-        Me.txtPass.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtPass.Font = New System.Drawing.Font("나눔고딕", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
-        Me.txtPass.Location = New System.Drawing.Point(16, 396)
-        Me.txtPass.Multiline = False
-        Me.txtPass.Name = "txtPass"
-        Me.txtPass.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None
-        Me.txtPass.Size = New System.Drawing.Size(351, 46)
-        Me.txtPass.TabIndex = 10
-        Me.txtPass.Text = ""
         '
         'Label2
         '
@@ -71,19 +60,6 @@ Partial Class frmMain
         Me.Label2.Size = New System.Drawing.Size(94, 21)
         Me.Label2.TabIndex = 9
         Me.Label2.Text = "Password"
-        '
-        'txtID
-        '
-        Me.txtID.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.txtID.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.txtID.Font = New System.Drawing.Font("나눔고딕", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
-        Me.txtID.Location = New System.Drawing.Point(12, 295)
-        Me.txtID.Multiline = False
-        Me.txtID.Name = "txtID"
-        Me.txtID.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None
-        Me.txtID.Size = New System.Drawing.Size(355, 46)
-        Me.txtID.TabIndex = 8
-        Me.txtID.Text = ""
         '
         'Label1
         '
@@ -118,12 +94,55 @@ Partial Class frmMain
         Me.PictureBox1.TabIndex = 11
         Me.PictureBox1.TabStop = False
         '
-        'noti1
+        'lblRegister
         '
-        Me.noti1.BalloonTipTitle = "New Omok"
-        Me.noti1.Icon = CType(resources.GetObject("noti1.Icon"), System.Drawing.Icon)
-        Me.noti1.Text = "New Omok"
-        Me.noti1.Visible = True
+        Me.lblRegister.AutoSize = True
+        Me.lblRegister.Font = New System.Drawing.Font("나눔고딕", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
+        Me.lblRegister.ForeColor = System.Drawing.Color.Blue
+        Me.lblRegister.Location = New System.Drawing.Point(316, 454)
+        Me.lblRegister.Name = "lblRegister"
+        Me.lblRegister.Size = New System.Drawing.Size(51, 14)
+        Me.lblRegister.TabIndex = 4
+        Me.lblRegister.Text = "회원가입"
+        '
+        'txtID
+        '
+        Me.txtID.BackColor = System.Drawing.Color.LightGray
+        Me.txtID.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtID.Font = New System.Drawing.Font("나눔고딕", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
+        Me.txtID.Location = New System.Drawing.Point(4, 18)
+        Me.txtID.Name = "txtID"
+        Me.txtID.Size = New System.Drawing.Size(348, 18)
+        Me.txtID.TabIndex = 1
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.LightGray
+        Me.Panel1.Controls.Add(Me.txtID)
+        Me.Panel1.Location = New System.Drawing.Point(12, 291)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(355, 49)
+        Me.Panel1.TabIndex = 1
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.LightGray
+        Me.Panel2.Controls.Add(Me.txtPass)
+        Me.Panel2.Location = New System.Drawing.Point(16, 396)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(355, 49)
+        Me.Panel2.TabIndex = 2
+        '
+        'txtPass
+        '
+        Me.txtPass.BackColor = System.Drawing.Color.LightGray
+        Me.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtPass.Font = New System.Drawing.Font("나눔고딕", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
+        Me.txtPass.Location = New System.Drawing.Point(4, 18)
+        Me.txtPass.Name = "txtPass"
+        Me.txtPass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(9679)
+        Me.txtPass.Size = New System.Drawing.Size(348, 18)
+        Me.txtPass.TabIndex = 2
         '
         'frmMain
         '
@@ -131,12 +150,13 @@ Partial Class frmMain
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(379, 546)
+        Me.Controls.Add(Me.Panel2)
+        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.lblRegister)
         Me.Controls.Add(Me.txtCheck)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.btnLogin)
-        Me.Controls.Add(Me.txtPass)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.txtID)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
@@ -144,17 +164,23 @@ Partial Class frmMain
         Me.Name = "frmMain"
         Me.ShowIcon = False
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents btnLogin As Button
-    Friend WithEvents txtPass As RichTextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents txtID As RichTextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents txtCheck As Label
-    Friend WithEvents noti1 As NotifyIcon
+    Friend WithEvents lblRegister As Label
+    Friend WithEvents txtID As TextBox
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents txtPass As TextBox
 End Class
