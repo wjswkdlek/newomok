@@ -24,11 +24,11 @@ Partial Class frmStart
     Private Sub InitializeComponent()
         Me.btnMessenger = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.VScrollBar1 = New System.Windows.Forms.VScrollBar()
         Me.btnOmok = New System.Windows.Forms.Button()
         Me.btn = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.VScrollBar1 = New System.Windows.Forms.VScrollBar()
+        Me.lblUser = New System.Windows.Forms.Label()
         Me.Notice = New System.Windows.Forms.RichTextBox()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -54,6 +54,13 @@ Partial Class frmStart
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Server List"
         '
+        'VScrollBar1
+        '
+        Me.VScrollBar1.Location = New System.Drawing.Point(440, 21)
+        Me.VScrollBar1.Name = "VScrollBar1"
+        Me.VScrollBar1.Size = New System.Drawing.Size(17, 254)
+        Me.VScrollBar1.TabIndex = 0
+        '
         'btnOmok
         '
         Me.btnOmok.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -75,28 +82,21 @@ Partial Class frmStart
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.LightGray
-        Me.PictureBox1.Location = New System.Drawing.Point(372, 12)
+        Me.PictureBox1.Location = New System.Drawing.Point(356, 12)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(100, 100)
         Me.PictureBox1.TabIndex = 4
         Me.PictureBox1.TabStop = False
         '
-        'Label1
+        'lblUser
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("나눔고딕", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
-        Me.Label1.Location = New System.Drawing.Point(385, 115)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(75, 14)
-        Me.Label1.TabIndex = 5
-        Me.Label1.Text = "Name/Level"
-        '
-        'VScrollBar1
-        '
-        Me.VScrollBar1.Location = New System.Drawing.Point(440, 21)
-        Me.VScrollBar1.Name = "VScrollBar1"
-        Me.VScrollBar1.Size = New System.Drawing.Size(17, 254)
-        Me.VScrollBar1.TabIndex = 0
+        Me.lblUser.Font = New System.Drawing.Font("나눔고딕", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
+        Me.lblUser.Location = New System.Drawing.Point(340, 115)
+        Me.lblUser.Name = "lblUser"
+        Me.lblUser.Size = New System.Drawing.Size(132, 31)
+        Me.lblUser.TabIndex = 5
+        Me.lblUser.Text = "Name/Level"
+        Me.lblUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Notice
         '
@@ -107,7 +107,7 @@ Partial Class frmStart
         Me.Notice.Multiline = False
         Me.Notice.Name = "Notice"
         Me.Notice.ReadOnly = True
-        Me.Notice.Size = New System.Drawing.Size(354, 42)
+        Me.Notice.Size = New System.Drawing.Size(319, 42)
         Me.Notice.TabIndex = 6
         Me.Notice.Text = ""
         '
@@ -118,7 +118,7 @@ Partial Class frmStart
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(484, 461)
         Me.Controls.Add(Me.Notice)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.lblUser)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.btn)
         Me.Controls.Add(Me.btnOmok)
@@ -132,7 +132,6 @@ Partial Class frmStart
         Me.GroupBox1.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
@@ -142,6 +141,6 @@ Partial Class frmStart
     Friend WithEvents btn As Button
     Friend WithEvents VScrollBar1 As VScrollBar
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Label1 As Label
+    Friend WithEvents lblUser As Label
     Friend WithEvents Notice As RichTextBox
 End Class
