@@ -22,14 +22,24 @@ Partial Class frmStart
     '코드 편집기에서는 수정하지 마세요.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmStart))
+        Me.noti1 = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.SuspendLayout()
+        '
+        'noti1
+        '
+        Me.noti1.BalloonTipTitle = "New Omok"
+        Me.noti1.Icon = CType(resources.GetObject("noti1.Icon"), System.Drawing.Icon)
+        Me.noti1.Text = "New Omok"
+        Me.noti1.Visible = True
         '
         'frmStart
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(379, 546)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
         Me.MinimizeBox = False
@@ -38,4 +48,6 @@ Partial Class frmStart
         Me.ResumeLayout(False)
 
     End Sub
+
+    Friend WithEvents noti1 As NotifyIcon
 End Class

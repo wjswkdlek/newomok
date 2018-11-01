@@ -22,6 +22,8 @@ Partial Class frmMain
     '코드 편집기에서는 수정하지 마세요.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
         Me.btnLogin = New System.Windows.Forms.Button()
         Me.txtPass = New System.Windows.Forms.RichTextBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -29,6 +31,7 @@ Partial Class frmMain
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtCheck = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.noti1 = New System.Windows.Forms.NotifyIcon(Me.components)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -115,6 +118,13 @@ Partial Class frmMain
         Me.PictureBox1.TabIndex = 11
         Me.PictureBox1.TabStop = False
         '
+        'noti1
+        '
+        Me.noti1.BalloonTipTitle = "New Omok"
+        Me.noti1.Icon = CType(resources.GetObject("noti1.Icon"), System.Drawing.Icon)
+        Me.noti1.Text = "New Omok"
+        Me.noti1.Visible = True
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 12.0!)
@@ -146,4 +156,5 @@ Partial Class frmMain
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents txtCheck As Label
+    Friend WithEvents noti1 As NotifyIcon
 End Class
