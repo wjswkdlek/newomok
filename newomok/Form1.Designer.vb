@@ -43,7 +43,7 @@ Partial Class frmMain
         Me.btnLogin.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnLogin.Font = New System.Drawing.Font("나눔고딕", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
-        Me.btnLogin.Location = New System.Drawing.Point(12, 481)
+        Me.btnLogin.Location = New System.Drawing.Point(12, 482)
         Me.btnLogin.Name = "btnLogin"
         Me.btnLogin.Size = New System.Drawing.Size(355, 52)
         Me.btnLogin.TabIndex = 3
@@ -55,7 +55,7 @@ Partial Class frmMain
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("나눔고딕", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.Gray
-        Me.Label2.Location = New System.Drawing.Point(12, 372)
+        Me.Label2.Location = New System.Drawing.Point(8, 372)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(94, 21)
         Me.Label2.TabIndex = 9
@@ -66,7 +66,7 @@ Partial Class frmMain
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("나눔고딕", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Gray
-        Me.Label1.Location = New System.Drawing.Point(12, 267)
+        Me.Label1.Location = New System.Drawing.Point(8, 267)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(29, 21)
         Me.Label1.TabIndex = 7
@@ -77,7 +77,7 @@ Partial Class frmMain
         Me.txtCheck.AutoSize = True
         Me.txtCheck.Font = New System.Drawing.Font("나눔고딕", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
         Me.txtCheck.ForeColor = System.Drawing.Color.Red
-        Me.txtCheck.Location = New System.Drawing.Point(13, 454)
+        Me.txtCheck.Location = New System.Drawing.Point(9, 454)
         Me.txtCheck.Name = "txtCheck"
         Me.txtCheck.Size = New System.Drawing.Size(109, 14)
         Me.txtCheck.TabIndex = 12
@@ -110,7 +110,7 @@ Partial Class frmMain
         Me.txtID.BackColor = System.Drawing.Color.LightGray
         Me.txtID.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtID.Font = New System.Drawing.Font("나눔고딕", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
-        Me.txtID.Location = New System.Drawing.Point(4, 18)
+        Me.txtID.Location = New System.Drawing.Point(3, 17)
         Me.txtID.Name = "txtID"
         Me.txtID.Size = New System.Drawing.Size(348, 18)
         Me.txtID.TabIndex = 1
@@ -128,7 +128,7 @@ Partial Class frmMain
         '
         Me.Panel2.BackColor = System.Drawing.Color.LightGray
         Me.Panel2.Controls.Add(Me.txtPass)
-        Me.Panel2.Location = New System.Drawing.Point(16, 396)
+        Me.Panel2.Location = New System.Drawing.Point(12, 396)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(355, 49)
         Me.Panel2.TabIndex = 2
@@ -138,7 +138,7 @@ Partial Class frmMain
         Me.txtPass.BackColor = System.Drawing.Color.LightGray
         Me.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtPass.Font = New System.Drawing.Font("나눔고딕", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(129, Byte))
-        Me.txtPass.Location = New System.Drawing.Point(4, 18)
+        Me.txtPass.Location = New System.Drawing.Point(3, 16)
         Me.txtPass.Name = "txtPass"
         Me.txtPass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(9679)
         Me.txtPass.Size = New System.Drawing.Size(348, 18)

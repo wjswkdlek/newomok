@@ -3,8 +3,8 @@
         txtCheck.Visible = False
         Dim Winhttp As New WinHttp.WinHttpRequest
         Dim idpass As String = txtID.Text + "|" + txtPass.Text
-        'Winhttp.Open("GET", "http://182.31.200.53:8080/userdata.txt") '외부 접속시 사용 (다른 사람에게 테스트 요청할때)
-        Winhttp.Open("GET", "http://192.168.168.100:8080/userdata.txt") '내부 접속시 사용 (내가 테스트 할때)
+        Winhttp.Open("GET", "http://182.31.200.53:8080/userdata.txt") '외부 접속시 사용 (다른 사람에게 테스트 요청할때)
+        'Winhttp.Open("GET", "http://192.168.168.100:8080/userdata.txt") '내부 접속시 사용 (내가 테스트 할때)
         Winhttp.Send()
         Winhttp.WaitForResponse()
         Dim result() As String = Split(Winhttp.ResponseText, vbCrLf)
@@ -26,6 +26,6 @@
     End Sub
 
     Private Sub lblRegister_Click(sender As Object, e As EventArgs) Handles lblRegister.Click
-
+        frmRegister.Show()
     End Sub
 End Class
